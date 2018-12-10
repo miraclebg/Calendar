@@ -1932,6 +1932,8 @@ static const CGFloat kMaxHourSlotHeight = 150.;
         [view addSubview:label];
         
         return view;
+    } else {
+        return nil;
     }
 }
 
