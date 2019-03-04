@@ -192,7 +192,7 @@ static const CGFloat kMaxHourSlotHeight = 150.;
 	_canCreateEvents = YES;
 	_canMoveEvents = YES;
 	_allowsSelection = YES;
-    _eventCoveringType = TimedEventCoveringTypeClassic;
+    _eventCoveringType = MGCDayPlannerCoveringTypeClassic;
 	
 	_reuseQueue = [[MGCReusableObjectQueue alloc] init];
 	_loadingDays = [NSMutableOrderedSet orderedSetWithCapacity:14];
