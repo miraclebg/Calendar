@@ -167,7 +167,7 @@ static NSString* const EventCellReuseIdentifier = @"EventCellReuseIdentifier";
     
     self.bgQueue = dispatch_queue_create("MGCDayPlannerEKViewController.bgQueue", NULL);
     
-    [self.eventKitSupport checkEventStoreAccessForCalendar:^(BOOL granted) {
+    [self.eventKitSupport checkEventStoreAccessForCalendar:self completion:^(BOOL granted) {
         if (granted) {
             NSArray *calendars = [self.eventStore calendarsForEntityType:EKEntityTypeEvent];
             self.visibleCalendars = [NSSet setWithArray:calendars];

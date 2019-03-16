@@ -97,19 +97,16 @@
 
 - (MGCEventView*)monthPlannerView:(MGCMonthPlannerView*)view cellForEventAtIndex:(NSUInteger)index date:(NSDate*)date
 {
-	assert(@"monthPlannerView:cellForEventAtIndex:date: has to implemented in MGCMonthPlannerViewController subclasses.");
 	return nil;
 }
 
 - (MGCDateRange*)monthPlannerView:(MGCMonthPlannerView*)view dateRangeForEventAtIndex:(NSUInteger)index date:(NSDate*)date
 {
-	assert(@"monthPlannerView:dateRangeForEventAtIndex:date: has to implemented in MGCMonthPlannerViewController subclasses.");
 	return nil;
 }
 
 - (MGCEventView*)monthPlannerView:(MGCMonthPlannerView *)view cellForNewEventAtDate:(NSDate*)date
 {
-	assert(@"monthPlannerView:cellForNewEventAtDate: has to implemented in MGCMonthPlannerViewController subclasses.");
 	return nil;
 }
 

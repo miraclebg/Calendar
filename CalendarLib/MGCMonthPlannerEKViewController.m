@@ -151,7 +151,7 @@ static NSString* const EventCellReuseIdentifier = @"EventCellReuseIdentifier";
     self.dateFormatter.dateStyle = NSDateFormatterNoStyle;
     self.dateFormatter.timeStyle = NSDateFormatterShortStyle;
     
-    [self.eventKitSupport checkEventStoreAccessForCalendar:^(BOOL granted) {
+    [self.eventKitSupport checkEventStoreAccessForCalendar:self completion:^(BOOL granted) {
         if (granted) {
             NSArray *calendars = [self.eventStore calendarsForEntityType:EKEntityTypeEvent];
             self.visibleCalendars = [NSSet setWithArray:calendars];

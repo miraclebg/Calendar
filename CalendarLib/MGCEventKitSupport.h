@@ -41,7 +41,7 @@ typedef void(^EventSaveCompletionBlockType)(BOOL);
 @property (nonatomic, readonly) BOOL accessGranted;
 
 - (instancetype)initWithEventStore:(EKEventStore*)eventStore;
-- (void)checkEventStoreAccessForCalendar:(void (^)(BOOL accessGranted))completion;
+- (void)checkEventStoreAccessForCalendar:(UIViewController*)viewController completion:(void (^)(BOOL accessGranted))completion;
 - (void)saveEvent:(EKEvent*)event completion:(void (^)(BOOL saved))completion;
 
 @end
