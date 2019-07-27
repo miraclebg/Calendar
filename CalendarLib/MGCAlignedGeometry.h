@@ -28,6 +28,7 @@
 //  SOFTWARE.
 //
 
+#import <UIKit/UIKit.h>
 
 // functions to align coordinates on pixel boundaries
 

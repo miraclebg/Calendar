@@ -29,6 +29,7 @@
 //
 
 #import <EventKitUI/EventKitUI.h>
+#import <EventKit/EventKit.h>
 
 #import "MGCDayPlannerEKViewController.h"
 #import "MGCStandardEventView.h"

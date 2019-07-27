@@ -28,6 +28,7 @@
 //  SOFTWARE.
 //
 
+#import <EventKit/EventKit.h>
 #import <Foundation/Foundation.h>
 #import "MGCEventKitSupport.h"
 
